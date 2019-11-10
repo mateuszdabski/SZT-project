@@ -19,7 +19,7 @@ def login_view(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('articles:list')
+            return redirect('articles:create')
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', { 'form':form })
