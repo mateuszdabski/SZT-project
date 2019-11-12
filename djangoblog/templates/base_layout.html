@@ -20,8 +20,8 @@
           </li>
           <li><a href="{% url 'articles:create' %}" class="highlight">New Article</a></li>
           {% else %}
-          <li><a href="{% url 'accounts:login' %}">Login</a></li>
-          <li><a href="{% url 'accounts:signup' %}">Signup</a></li>
+          <li><a href="{% url 'accounts:login' %}" class="highlight">Login</a></li>
+          <li><a href="{% url 'accounts:signup' %}" class="highlight">Signup</a></li>
           {% endif %}
         </ul>
       </nav>
